@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Arunachalam Café – Authentic Pure Veg South Indian Restaurant, Raipur</title>
+
+<!-- ═══ SEO Meta Tags ═══ -->
+<meta name="description" content="Arunachalam Café in Raipur, Chhattisgarh — Authentic 100% Pure Vegetarian South Indian cuisine. Crispy Dosas, soft Idlis, Filter Coffee & more. Reserve your table today."/>
+<meta name="keywords" content="Arunachalam Cafe, South Indian restaurant Raipur, pure veg restaurant Raipur, dosa Raipur, idli Raipur, filter coffee Raipur"/>
+<meta name="author" content="Arunachalam Café"/>
+<meta name="robots" content="index, follow"/>
+
+<!-- ═══ Open Graph / Social ═══ -->
+<meta property="og:title" content="Arunachalam Café – Pure Veg South Indian Restaurant, Raipur"/>
+<meta property="og:description" content="Authentic South Indian cuisine — Dosas, Idlis, Filter Coffee & more. 100% Pure Vegetarian. Raipur, Chhattisgarh."/>
+<meta property="og:type" content="restaurant"/>
+<meta property="og:locale" content="en_IN"/>
+
+<!-- ═══ Fonts ═══ -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet"/>
+
+<!-- ═══ Schema.org Restaurant Markup ═══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Arunachalam Café",
+  "description": "Authentic 100% Pure Vegetarian South Indian Restaurant in Raipur, Chhattisgarh",
+  "servesCuisine": "South Indian",
+  "priceRange": "₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Raipur",
+    "addressRegion": "Chhattisgarh",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91-9755113747",
+  "openingHours": ["Mo-Fr 07:00-21:00", "Sa 07:00-21:30", "Su 07:30-20:00"]
+}
+</script>
+
+<style>
+/* ════════════════════════════════════════════
+   VARIABLES & RESET
+════════════════════════════════════════════ */
+:root {
+  --teal:       #1B8080;
+  --teal-dark:  #155F5F;
+  --teal-light: #2AABAB;
+  --teal-pale:  #E0F4F4;
+  --terra:      #C8561E;
+  --terra-light:#E07040;
+  --terra-pale: #FDEBD8;
+  --wood:       #8B5E3C;
+  --wood-light: #C49A6C;
+  --cream:      #FFFBF4;
+  --cream-dark: #F5EDD8;
+  --white:      #FFFFFF;
+  --ink:        #1A1A1A;
+  --text:       #2D2D2D;
+  --text-soft:  #5A5A5A;
+  --gold:       #C8960A;
+  --gold-light: #E4B430;
+  --border:     rgba(27,128,128,0.25);
+  --nav-h:      68px;
+  --shadow-sm:  0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md:  0 8px 30px rgba(0,0,0,0.12);
+  --shadow-lg:  0 20px 60px rgba(0,0,0,0.16);
+  --transition: 0.28s cubic-bezier(0.4,0,0.2,1);
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family:'Lato',sans-serif;
+  background:var(--cream);
+  color:var(--text);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img { display:block; max-width:100%; }
+
+/* ════════════════════════════════════════════
+   LOADING SCREEN
+════════════════════════════════════════════ */
+#loading-screen {
+  position:fixed; inset:0; z-index:9999;
+  background:var(--teal-dark);
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1.5rem;
+  transition:opacity .5s ease, visibility .5s ease;
+}
+#loading-screen.hidden { opacity:0; visibility:hidden; pointer-events:none; }
+.loader-name {
+  font-family:'Cinzel',serif; font-size:2rem; color:var(--gold-light);
+  letter-spacing:.15em; animation:pulseGold 1.5s ease-in-out infinite;
+}
+.loader-bar { width:200px; height:2px; background:rgba(255,255,255,.15); border-radius:2px; overflow:hidden; }
+.loader-bar-fill { height:100%; background:var(--gold-light); border-radius:2px; animation:loadFill 1.2s ease forwards; }
+@keyframes loadFill { from{width:0} to{width:100%} }
+@keyframes pulseGold { 0%,100%{opacity:.7} 50%{opacity:1} }
+
+/* ════════════════════════════════════════════
+   KOLAM BG PATTERN
+════════════════════════════════════════════ */
+.kolam-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='30' cy='30' r='2' fill='none' stroke='%231B8080' stroke-width='0.4' opacity='0.18'/%3E%3Ccircle cx='30' cy='30' r='8' fill='none' stroke='%231B8080' stroke-width='0.3' opacity='0.12'/%3E%3Ccircle cx='30' cy='30' r='14' fill='none' stroke='%231B8080' stroke-width='0.3' opacity='0.08'/%3E%3Ccircle cx='0' cy='0' r='2' fill='none' stroke='%231B8080' stroke-width='0.4' opacity='0.18'/%3E%3Ccircle cx='60' cy='0' r='2' fill='none' stroke='%231B8080' stroke-width='0.4' opacity='0.18'/%3E%3Ccircle cx='0' cy='60' r='2' fill='none' stroke='%231B8080' stroke-width='0.4' opacity='0.18'/%3E%3Ccircle cx='60' cy='60' r='2' fill='none' stroke='%231B8080' stroke-width='0.4' opacity='0.18'/%3E%3C/svg%3E");
+}
+
+/* ════════════════════════════════════════════
+   NAV
+════════════════════════════════════════════ */
+nav {
+  position:fixed; top:0; left:0; right:0; z-index:200;
+  background:var(--teal-dark);
+  border-bottom:3px solid var(--terra);
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0 2rem; height:var(--nav-h);
+  transition:box-shadow var(--transition);
+}
+nav.scrolled { box-shadow:0 4px 20px rgba(0,0,0,.25); }
+
+.nav-brand { display:flex; align-items:center; gap:.8rem; text-decoration:none; }
+.nav-emblem {
+  width:44px; height:44px; border-radius:50%;
+  border:2px solid var(--gold-light);
+  overflow:hidden; background:var(--teal);
+  display:flex; align-items:center; justify-content:center;
+  flex-shrink:0;
+}
+.nav-emblem img { width:100%; height:100%; object-fit:cover; }
+.nav-emblem-fallback { font-size:1.4rem; }
+.nav-brand-text { line-height:1.1; }
+.nav-brand-text h1 {
+  font-family:'Cinzel',serif; font-size:1.05rem; font-weight:600;
+  color:var(--gold-light); letter-spacing:.05em;
+}
+.nav-brand-text span { font-size:.62rem; letter-spacing:.18em; text-transform:uppercase; color:rgba(255,255,255,.6); }
+.nav-links { display:flex; list-style:none; }
+.nav-links a {
+  display:block; height:var(--nav-h); line-height:var(--nav-h);
+  padding:0 1rem; font-size:.82rem; letter-spacing:.1em; text-transform:uppercase;
+  color:rgba(255,255,255,.8); text-decoration:none;
+  transition:color var(--transition), border-bottom var(--transition);
+  border-bottom:3px solid transparent; margin-bottom:-3px;
+}
+.nav-links a:hover, .nav-links a.active { color:#fff; border-bottom-color:var(--gold-light); }
+.nav-burger {
+  display:none; flex-direction:column; gap:5px; cursor:pointer; padding:.5rem;
+  background:none; border:none;
+}
+.nav-burger span { width:26px; height:2px; background:var(--gold-light); display:block; border-radius:2px; transition:all .3s; }
+.nav-burger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+.nav-burger.open span:nth-child(2) { opacity:0; }
+.nav-burger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+
+/* ════════════════════════════════════════════
+   PAGE SYSTEM
+════════════════════════════════════════════ */
+.page { display:none; padding-top:var(--nav-h); min-height:100vh; }
+.page.active { display:block; }
+
+/* Fade-in for page transitions */
+@keyframes pageFade { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+.page.active { animation:pageFade .35s ease both; }
+
+/* ════════════════════════════════════════════
+   HELPERS / SHARED COMPONENTS
+════════════════════════════════════════════ */
+.pure-veg-badge {
+  display:inline-flex; align-items:center; gap:.4rem;
+  background:#fff; border:1.5px solid #1B8000;
+  padding:.2rem .7rem; font-size:.72rem;
+  font-weight:700; color:#1B8000; letter-spacing:.08em; text-transform:uppercase;
+}
+.pure-veg-badge::before {
+  content:''; display:block; width:10px; height:10px;
+  border:1.5px solid #1B8000; border-radius:2px; background:#1B8000;
+}
+.section-tag {
+  display:inline-block; font-size:.7rem; letter-spacing:.22em; text-transform:uppercase;
+  color:var(--teal); font-weight:700;
+  padding-bottom:.3rem; border-bottom:2px solid var(--terra); margin-bottom:.8rem;
+}
+.section-title {
+  font-family:'Playfair Display',serif;
+  font-size:clamp(1.8rem,4vw,2.8rem);
+  color:var(--teal-dark); line-height:1.15;
+}
+.section-sub { color:var(--text-soft); font-size:1rem; line-height:1.75; margin-top:.6rem; }
+.teal-rule { width:50px; height:3px; background:linear-gradient(90deg,var(--terra),var(--teal)); margin:1rem 0; }
+
+/* ════════════════════════════════════════════
+   HOME – HERO
+════════════════════════════════════════════ */
+.hero {
+  min-height:calc(100vh - var(--nav-h));
+  background:linear-gradient(135deg,var(--teal-dark) 0%,#0D5050 40%,#1a3030 100%);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  text-align:center; padding:4rem 2rem; position:relative; overflow:hidden;
+}
+.hero::before {
+  content:''; position:absolute; bottom:-2px; left:50%; transform:translateX(-50%);
+  width:300px; height:200px; border-radius:150px 150px 0 0;
+  border:2px solid rgba(200,150,10,.18); pointer-events:none;
+}
+.hero::after {
+  content:''; position:absolute; inset:16px;
+  border:1px solid rgba(200,150,10,.12); pointer-events:none;
+}
+.hero-kolam {
+  position:absolute; inset:0; pointer-events:none; opacity:.07;
+  background-image:radial-gradient(circle,#E4B430 1px,transparent 1px);
+  background-size:28px 28px;
+}
+.hero-eyebrow {
+  font-size:.76rem; letter-spacing:.35em; text-transform:uppercase;
+  color:var(--gold-light); margin-bottom:1rem;
+  animation:fadeUp .7s ease both;
+}
+.hero-name {
+  font-family:'Cinzel',serif;
+  font-size:clamp(2.8rem,9vw,6.5rem);
+  font-weight:600; color:#fff; line-height:1; letter-spacing:.04em;
+  animation:fadeUp .8s .1s ease both;
+}
+.hero-name span { color:var(--gold-light); }
+.hero-subtitle {
+  font-family:'Playfair Display',serif; font-style:italic;
+  font-size:clamp(1.1rem,3vw,1.5rem); color:rgba(255,255,255,.75);
+  margin:1.2rem 0 .5rem; animation:fadeUp .8s .2s ease both;
+}
+.hero-divider {
+  color:var(--terra-light); font-size:1.2rem; letter-spacing:.4em;
+  margin:1rem 0; animation:fadeUp .8s .25s ease both;
+}
+.hero-tagline {
+  font-size:.95rem; letter-spacing:.18em; text-transform:uppercase;
+  color:rgba(255,255,255,.5); animation:fadeUp .8s .3s ease both;
+}
+.hero-badges {
+  display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;
+  margin:2rem 0; animation:fadeUp .8s .35s ease both;
+}
+.hero-cta {
+  display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;
+  animation:fadeUp .8s .4s ease both;
+}
+
+/* Buttons */
+.btn-primary {
+  font-size:.82rem; letter-spacing:.15em; text-transform:uppercase; font-weight:700;
+  cursor:pointer; text-decoration:none;
+  background:var(--terra); color:#fff; padding:.85rem 2.2rem;
+  border:2px solid var(--terra); transition:all var(--transition); display:inline-block;
+  position:relative; overflow:hidden;
+}
+.btn-primary::after {
+  content:''; position:absolute; inset:0; background:rgba(255,255,255,.12);
+  transform:scaleX(0); transform-origin:left; transition:transform .3s;
+}
+.btn-primary:hover::after { transform:scaleX(1); }
+.btn-primary:hover { transform:translateY(-2px); box-shadow:0 6px 20px rgba(200,86,30,.35); }
+.btn-outline {
+  font-size:.82rem; letter-spacing:.15em; text-transform:uppercase; font-weight:700;
+  cursor:pointer; text-decoration:none;
+  background:transparent; color:rgba(255,255,255,.88); padding:.85rem 2.2rem;
+  border:2px solid rgba(255,255,255,.35); transition:all var(--transition); display:inline-block;
+}
+.btn-outline:hover { border-color:var(--gold-light); color:var(--gold-light); transform:translateY(-2px); }
+
+@keyframes fadeUp { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:translateY(0)} }
+
+/* ════ FEATURE STRIP ════ */
+.feature-strip {
+  background:var(--terra); display:grid; grid-template-columns:repeat(3,1fr);
+}
+.feature-item {
+  padding:2rem 1.5rem; text-align:center; color:#fff;
+  border-right:1px solid rgba(255,255,255,.2); transition:background var(--transition);
+}
+.feature-item:hover { background:rgba(255,255,255,.08); }
+.feature-item:last-child { border-right:none; }
+.feature-item .fi { font-size:2rem; margin-bottom:.7rem; }
+.feature-item h3 { font-family:'Playfair Display',serif; font-size:1.15rem; margin-bottom:.4rem; }
+.feature-item p { font-size:.88rem; opacity:.85; line-height:1.65; }
+
+/* ════ SPECIALTIES SECTION ════ */
+.section { padding:5rem 2rem; max-width:1100px; margin:0 auto; }
+.section-header { margin-bottom:3rem; }
+
+.card-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1.5rem; }
+.card {
+  background:#fff; border:1px solid rgba(27,128,128,.12);
+  border-top:3px solid var(--teal); padding:1.8rem 1.5rem; text-align:center;
+  transition:transform var(--transition), box-shadow var(--transition);
+  position:relative; overflow:hidden;
+}
+.card::before {
+  content:''; position:absolute; bottom:0; left:0; right:0; height:3px;
+  background:linear-gradient(90deg,var(--terra),var(--teal));
+  transform:scaleX(0); transform-origin:left; transition:transform var(--transition);
+}
+.card:hover { transform:translateY(-5px); box-shadow:var(--shadow-md); }
+.card:hover::before { transform:scaleX(1); }
+.card .ci { font-size:2.4rem; margin-bottom:.8rem; }
+.card .ci img { width:90px; height:90px; object-fit:contain; margin:0 auto .8rem; border-radius:8px; }
+.card h3 { font-family:'Playfair Display',serif; font-size:1.2rem; color:var(--teal-dark); margin-bottom:.4rem; }
+.card p { font-size:.9rem; color:var(--text-soft); line-height:1.65; }
+
+/* ════ TESTIMONIALS ════ */
+.testimonial-wrap {
+  background:var(--teal-dark); padding:5rem 2rem; text-align:center;
+  position:relative; overflow:hidden;
+}
+.testimonial-wrap::before {
+  content:'"'; position:absolute; top:-2rem; left:50%; transform:translateX(-50%);
+  font-family:'Playfair Display',serif; font-size:16rem;
+  color:rgba(255,255,255,.04); pointer-events:none; line-height:1;
+}
+.testimonial-inner { max-width:720px; margin:0 auto; position:relative; }
+
+/* Carousel */
+.testimonial-slides { position:relative; min-height:160px; }
+.t-slide {
+  position:absolute; inset:0;
+  opacity:0; transform:translateY(10px); transition:all .5s ease; pointer-events:none;
+}
+.t-slide.active { opacity:1; transform:translateY(0); position:relative; pointer-events:auto; }
+.t-slide blockquote {
+  font-family:'Playfair Display',serif; font-size:clamp(1.1rem,2.5vw,1.5rem);
+  font-style:italic; color:rgba(255,255,255,.9); line-height:1.85;
+}
+.t-slide cite {
+  display:block; margin-top:1.5rem; font-size:.82rem;
+  letter-spacing:.18em; text-transform:uppercase;
+  color:var(--gold-light); font-style:normal;
+}
+.t-slide cite::before { content:'— '; }
+.t-dots { display:flex; justify-content:center; gap:.5rem; margin-top:2rem; }
+.t-dot {
+  width:8px; height:8px; border-radius:50%; background:rgba(255,255,255,.25);
+  cursor:pointer; transition:all .3s; border:none;
+}
+.t-dot.active { background:var(--gold-light); transform:scale(1.3); }
+
+/* More Reviews Cards */
+.review-card { text-align:left; }
+.review-card blockquote { font-style:italic; font-size:.95rem; line-height:1.75; color:var(--text-soft); }
+.review-stars { color:var(--gold); font-size:.9rem; margin-bottom:.5rem; }
+.review-author { margin-top:1rem; font-family:'Playfair Display',serif; color:var(--teal-dark); font-size:.95rem; }
+
+/* ════════════════════════════════════════════
+   PAGE BANNER (shared across About/Menu/Gallery/Contact)
+════════════════════════════════════════════ */
+.page-banner {
+  background:linear-gradient(135deg,var(--teal-dark),#0a3f3f);
+  padding:5rem 2rem 4rem; text-align:center;
+  position:relative; overflow:hidden;
+}
+.page-banner::after {
+  content:''; position:absolute; inset:14px;
+  border:1px solid rgba(200,150,10,.2); pointer-events:none;
+}
+.page-banner-kolam {
+  position:absolute; inset:0; pointer-events:none; opacity:.05;
+  background-image:radial-gradient(circle,#E4B430 1px,transparent 1px);
+  background-size:24px 24px;
+}
+.banner-tag {
+  display:block; font-size:.7rem; letter-spacing:.3em; text-transform:uppercase;
+  color:var(--gold-light); margin-bottom:.8rem;
+}
+.page-banner h1 {
+  font-family:'Cinzel',serif; font-weight:600;
+  font-size:clamp(2rem,6vw,4rem); color:#fff; line-height:1.1;
+  position:relative; z-index:1;
+}
+.page-banner p {
+  font-family:'Playfair Display',serif; font-style:italic;
+  color:rgba(255,255,255,.65); margin-top:.8rem; position:relative; z-index:1;
+}
+
+/* ════════════════════════════════════════════
+   ABOUT
+════════════════════════════════════════════ */
+.about-grid {
+  display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;
+  padding:5rem 2rem; max-width:1100px; margin:0 auto;
+}
+.about-visual { position:relative; }
+.about-image-frame {
+  border:3px solid var(--teal); padding:.8rem; background:#fff;
+  box-shadow:var(--shadow-md);
+}
+.about-image-frame::before {
+  content:''; position:absolute; inset:-10px;
+  border:1px solid rgba(27,128,128,.2); pointer-events:none;
+}
+.about-photo {
+  width:100%; aspect-ratio:4/3; object-fit:cover;
+  display:block;
+}
+.about-photo-fallback {
+  width:100%; aspect-ratio:4/3;
+  background:linear-gradient(135deg,var(--terra) 0%,#A03010 40%,#601A00 100%);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:.8rem; color:#fff;
+}
+.about-photo-fallback .big { font-size:4.5rem; }
+.about-photo-fallback p { font-family:'Playfair Display',serif; font-style:italic; font-size:1rem; opacity:.8; }
+.about-text h2 { font-family:'Playfair Display',serif; font-size:2rem; color:var(--teal-dark); margin-bottom:1rem; }
+.about-text p { font-size:1rem; line-height:1.9; color:var(--text); margin-bottom:1rem; }
+
+/* Stat Bar */
+.stat-bar { background:var(--teal-dark); display:grid; grid-template-columns:repeat(4,1fr); }
+.stat-cell {
+  padding:2.5rem 1rem; text-align:center;
+  border-right:1px solid rgba(255,255,255,.1);
+  transition:background var(--transition);
+}
+.stat-cell:hover { background:rgba(255,255,255,.04); }
+.stat-cell:last-child { border-right:none; }
+.stat-num {
+  font-family:'Cinzel',serif; font-size:2.5rem; color:var(--gold-light);
+  animation:countUp 1.5s ease both;
+}
+.stat-lbl { font-size:.72rem; letter-spacing:.15em; text-transform:uppercase; color:rgba(255,255,255,.55); margin-top:.4rem; }
+@keyframes countUp { from{opacity:0;transform:scale(.8)} to{opacity:1;transform:scale(1)} }
+
+/* ════════════════════════════════════════════
+   MENU
+════════════════════════════════════════════ */
+.menu-search-bar {
+  max-width:400px; margin:1.5rem auto 0;
+  position:relative; padding:0 1rem;
+}
+.menu-search-bar input {
+  width:100%; padding:.6rem 1rem .6rem 2.5rem;
+  font-family:'Lato',sans-serif; font-size:.9rem;
+  border:1.5px solid var(--border); background:#fff; color:var(--ink);
+  outline:none; transition:border-color var(--transition);
+}
+.menu-search-bar input:focus { border-color:var(--teal); }
+.menu-search-bar::before {
+  content:'🔍'; position:absolute; left:1.8rem; top:50%; transform:translateY(-50%);
+  font-size:.85rem; pointer-events:none;
+}
+.menu-tabs {
+  display:flex; flex-wrap:wrap; gap:.4rem;
+  justify-content:center; padding:1.5rem 1rem 0;
+  max-width:900px; margin:0 auto;
+}
+.mtab {
+  font-size:.75rem; letter-spacing:.1em; text-transform:uppercase; font-weight:700;
+  cursor:pointer; padding:.5rem 1.1rem;
+  border:2px solid var(--teal); background:transparent; color:var(--teal);
+  transition:all var(--transition); border-radius:2px;
+}
+.mtab:hover, .mtab.active { background:var(--teal-dark); color:#fff; border-color:var(--teal-dark); }
+.menu-pane { display:none; max-width:820px; margin:0 auto; padding:2.5rem 2rem 5rem; }
+.menu-pane.active { display:block; animation:pageFade .3s ease both; }
+.menu-cat-title {
+  font-family:'Playfair Display',serif; font-size:1.7rem; color:var(--teal-dark);
+  text-align:center; position:relative; margin-bottom:2rem;
+}
+.menu-cat-title::before, .menu-cat-title::after {
+  content:''; display:inline-block; vertical-align:middle;
+  width:50px; height:2px; background:var(--terra); margin:0 1rem;
+}
+.menu-row {
+  display:flex; justify-content:space-between; align-items:baseline;
+  padding:.9rem 0; border-bottom:1px dotted rgba(27,128,128,.3);
+  transition:background var(--transition); border-radius:2px;
+}
+.menu-row:last-child { border-bottom:none; }
+.menu-row:hover { background:rgba(27,128,128,.03); padding-left:.5rem; }
+.menu-row-left h4 { font-family:'Playfair Display',serif; font-size:1.08rem; color:var(--ink); }
+.menu-row-left p { font-size:.86rem; color:var(--text-soft); font-style:italic; margin-top:.15rem; }
+.menu-price { font-weight:700; font-size:1rem; color:var(--teal-dark); white-space:nowrap; margin-left:1rem; }
+.mbadge {
+  display:inline-block; font-size:.58rem; letter-spacing:.08em; text-transform:uppercase;
+  background:var(--terra); color:#fff; padding:.1rem .4rem; margin-left:.4rem; vertical-align:middle;
+}
+.mbadge-gold { background:var(--gold); }
+.menu-no-results { text-align:center; color:var(--text-soft); padding:3rem; font-style:italic; }
+
+/* ════════════════════════════════════════════
+   GALLERY
+════════════════════════════════════════════ */
+.gallery-wrap { max-width:1200px; margin:3rem auto; padding:0 1.5rem; }
+.gallery-masonry {
+  display:grid; grid-template-columns:repeat(3,1fr);
+  grid-auto-rows:220px; gap:1rem;
+}
+.g-item {
+  position:relative; overflow:hidden; cursor:pointer;
+  border:3px solid var(--teal); border-radius:2px;
+}
+.g-item.tall { grid-row:span 2; }
+.g-item.wide { grid-column:span 2; }
+.g-fill {
+  width:100%; height:100%;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:.6rem; transition:transform .5s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+.g-fill img {
+  width:100%; height:100%; object-fit:cover; position:absolute; inset:0;
+  transition:transform .5s;
+}
+.g-item:hover .g-fill { transform:scale(1.05); }
+.g-fill .gi { font-size:3rem; position:relative; z-index:1; }
+.g-fill span {
+  font-family:'Playfair Display',serif; font-style:italic; font-size:1rem;
+  position:relative; z-index:1; text-align:center; padding:0 .5rem;
+}
+.g-overlay {
+  position:absolute; inset:0;
+  background:linear-gradient(to top,rgba(11,60,60,.85) 0%,transparent 55%);
+  opacity:0; transition:opacity .35s;
+  display:flex; align-items:flex-end; padding:1rem;
+}
+.g-item:hover .g-overlay { opacity:1; }
+.g-overlay p { font-family:'Playfair Display',serif; font-style:italic; color:#fff; font-size:.92rem; }
+.g1 { background:linear-gradient(135deg,#C8561E,#7A2800); color:#fff; }
+.g2 { background:linear-gradient(135deg,#1B8080,#0D4040); color:#E0F4F4; }
+.g3 { background:linear-gradient(135deg,#D4A020,#7A5500); color:#fff; }
+.g4 { background:linear-gradient(135deg,#A0522D,#5C2000); color:#fff; }
+.g5 { background:linear-gradient(135deg,#2AABAB,#155F5F); color:#fff; }
+.g6 { background:linear-gradient(135deg,#E07040,#8B2A00); color:#fff; }
+.g7 { background:linear-gradient(135deg,#1B8080,#0D4040); color:#E0F4F4; }
+
+/* ════════════════════════════════════════════
+   CONTACT
+════════════════════════════════════════════ */
+.contact-wrap {
+  display:grid; grid-template-columns:1fr 1.4fr; gap:3rem;
+  max-width:1100px; margin:0 auto; padding:4rem 2rem;
+}
+.contact-panel h2 {
+  font-family:'Playfair Display',serif; font-size:1.8rem;
+  color:var(--teal-dark); margin-bottom:1.2rem;
+}
+.cdetail {
+  display:flex; gap:1rem; align-items:flex-start;
+  padding:1rem 0; border-bottom:1px solid rgba(27,128,128,.15);
+  transition:background var(--transition);
+}
+.cdetail:last-of-type { border-bottom:none; }
+.cdetail .ci { font-size:1.4rem; min-width:2rem; margin-top:.1rem; }
+.cdetail h4 { font-family:'Playfair Display',serif; font-size:.95rem; color:var(--teal-dark); margin-bottom:.2rem; }
+.cdetail p { font-size:.92rem; color:var(--text-soft); line-height:1.6; }
+.cdetail a { color:var(--teal); text-decoration:none; transition:color var(--transition); }
+.cdetail a:hover { color:var(--terra); }
+
+.hours-tbl { width:100%; border-collapse:collapse; margin-top:.5rem; }
+.hours-tbl td { padding:.35rem 0; font-size:.9rem; color:var(--text); }
+.hours-tbl td:last-child { text-align:right; color:var(--teal); font-weight:700; }
+.hours-tbl tr.today td { color:var(--terra); font-weight:700; }
+.hours-tbl tr.today td:last-child { color:var(--terra); }
+.today-badge {
+  display:inline-block; font-size:.55rem; letter-spacing:.08em; text-transform:uppercase;
+  background:var(--terra); color:#fff; padding:.1rem .35rem; margin-left:.4rem; vertical-align:middle;
+}
+
+/* Map Embed */
+.map-embed { margin-top:1.5rem; border:3px solid var(--teal); overflow:hidden; }
+.map-embed iframe { display:block; width:100%; height:200px; border:none; }
+
+/* Booking Form */
+.book-form {
+  background:#fff; border:2px solid rgba(27,128,128,.2);
+  border-top:4px solid var(--terra); padding:2.5rem;
+}
+.book-form h2 {
+  font-family:'Playfair Display',serif; font-size:1.6rem;
+  color:var(--teal-dark); text-align:center; margin-bottom:1.5rem;
+}
+.frow { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.fgroup { margin-bottom:1.1rem; }
+.fgroup label {
+  display:block; font-size:.7rem; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--teal); font-weight:700; margin-bottom:.35rem;
+}
+.fgroup input, .fgroup select, .fgroup textarea {
+  width:100%; padding:.6rem .85rem;
+  font-family:'Lato',sans-serif; font-size:.92rem; color:var(--ink);
+  background:var(--cream); border:1.5px solid rgba(27,128,128,.25);
+  outline:none; transition:border-color var(--transition); resize:vertical;
+  appearance:none; -webkit-appearance:none;
+}
+.fgroup input:focus, .fgroup select:focus, .fgroup textarea:focus { border-color:var(--teal); background:#fff; }
+.fgroup.error input, .fgroup.error select { border-color:#e53e3e; }
+.fgroup .err-msg { font-size:.72rem; color:#e53e3e; margin-top:.25rem; display:none; }
+.fgroup.error .err-msg { display:block; }
+
+.form-success {
+  display:none; background:var(--teal-dark); color:#fff;
+  text-align:center; padding:3rem 2rem;
+}
+.form-success.show { display:block; animation:pageFade .4s ease both; }
+.form-success .fs-icon { font-size:3rem; margin-bottom:1rem; }
+.form-success h3 { font-family:'Cinzel',serif; font-size:1.4rem; color:var(--gold-light); margin-bottom:.8rem; }
+.form-success p { font-family:'Playfair Display',serif; font-style:italic; opacity:.85; line-height:1.75; }
+
+/* ════════════════════════════════════════════
+   FOOTER
+════════════════════════════════════════════ */
+footer {
+  background:#0a3030; border-top:3px solid var(--terra);
+  padding:3rem 2rem 1.5rem; text-align:center;
+}
+.footer-logo { font-family:'Cinzel',serif; font-size:1.5rem; color:var(--gold-light); margin-bottom:.3rem; }
+.footer-sub { font-size:.7rem; letter-spacing:.2em; text-transform:uppercase; color:rgba(255,255,255,.38); margin-bottom:2rem; }
+.flinks { display:flex; justify-content:center; gap:1.5rem; flex-wrap:wrap; list-style:none; margin-bottom:2rem; }
+.flinks a { font-size:.75rem; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.5); text-decoration:none; transition:color var(--transition); }
+.flinks a:hover { color:var(--gold-light); }
+.footer-social { display:flex; justify-content:center; gap:1rem; margin-bottom:2rem; }
+.social-btn {
+  display:inline-flex; align-items:center; gap:.4rem;
+  font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+  color:rgba(255,255,255,.6); text-decoration:none;
+  border:1px solid rgba(255,255,255,.15); padding:.4rem .9rem;
+  transition:all var(--transition);
+}
+.social-btn:hover { color:#fff; border-color:rgba(255,255,255,.4); }
+.fcopy { font-size:.75rem; color:rgba(255,255,255,.2); border-top:1px solid rgba(255,255,255,.07); padding-top:1.5rem; }
+
+/* ════════════════════════════════════════════
+   FLOATING ELEMENTS
+════════════════════════════════════════════ */
+/* WhatsApp Button */
+.wa-btn {
+  position:fixed; bottom:2rem; right:2rem; z-index:150;
+  width:56px; height:56px; border-radius:50%;
+  background:#25D366; color:#fff; text-decoration:none;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 4px 20px rgba(37,211,102,.45);
+  transition:all var(--transition); font-size:1.6rem;
+  animation:waPulse 2.5s ease-in-out infinite;
+}
+.wa-btn:hover { transform:scale(1.12); box-shadow:0 6px 28px rgba(37,211,102,.6); }
+@keyframes waPulse {
+  0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.45)}
+  50%{box-shadow:0 4px 30px rgba(37,211,102,.7), 0 0 0 8px rgba(37,211,102,.12)}
+}
+
+/* Back to Top */
+.back-top {
+  position:fixed; bottom:2rem; left:2rem; z-index:150;
+  width:44px; height:44px; border-radius:50%;
+  background:var(--teal-dark); color:var(--gold-light);
+  border:2px solid var(--gold-light); cursor:pointer; font-size:1.1rem;
+  display:flex; align-items:center; justify-content:center;
+  opacity:0; visibility:hidden; transition:all var(--transition);
+  box-shadow:var(--shadow-md);
+}
+.back-top.visible { opacity:1; visibility:visible; }
+.back-top:hover { background:var(--gold-light); color:var(--teal-dark); transform:translateY(-3px); }
+
+/* Scroll Reveal */
+.reveal {
+  opacity:0; transform:translateY(24px);
+  transition:opacity .6s ease, transform .6s ease;
+}
+.reveal.visible { opacity:1; transform:translateY(0); }
+
+/* ════════════════════════════════════════════
+   MOBILE RESPONSIVE
+════════════════════════════════════════════ */
+@media(max-width:768px){
+  /* Nav */
+  .nav-links {
+    display:none; flex-direction:column; position:absolute;
+    top:var(--nav-h); left:0; right:0; background:var(--teal-dark);
+    border-top:1px solid var(--terra);
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+    max-height:calc(100vh - var(--nav-h)); overflow-y:auto;
+  }
+  .nav-links.open { display:flex; }
+  .nav-links a { height:auto; line-height:1.4; padding:1rem 1.5rem; border-bottom:none; border-left:3px solid transparent; margin-bottom:0; }
+  .nav-links a:hover,.nav-links a.active { border-left-color:var(--gold-light); border-bottom:none; }
+  .nav-burger { display:flex; }
+  nav { padding:0 1.2rem; }
+
+  /* Hero */
+  .hero { padding:3rem 1.5rem; min-height:85vh; }
+  .hero::after { inset:10px; }
+  .hero-name { letter-spacing:.02em; }
+
+  /* Feature strip */
+  .feature-strip { grid-template-columns:1fr; }
+  .feature-item { border-right:none; border-bottom:1px solid rgba(255,255,255,.2); }
+  .feature-item:last-child { border-bottom:none; }
+
+  /* About */
+  .about-grid { grid-template-columns:1fr; gap:2rem; padding:3rem 1.5rem; }
+  .stat-bar { grid-template-columns:1fr 1fr; }
+  .stat-cell { border-bottom:1px solid rgba(255,255,255,.1); }
+  .stat-num { font-size:2rem; }
+
+  /* Menu */
+  .menu-tabs { padding-top:1.5rem; gap:.3rem; }
+  .mtab { font-size:.68rem; padding:.45rem .8rem; }
+  .menu-pane { padding:2rem 1.2rem 4rem; }
+
+  /* Gallery */
+  .gallery-masonry { grid-template-columns:1fr 1fr; grid-auto-rows:160px; }
+  .g-item.wide { grid-column:span 1; }
+  .g-item.tall { grid-row:span 1; }
+
+  /* Contact */
+  .contact-wrap { grid-template-columns:1fr; gap:2rem; padding:2.5rem 1.5rem; }
+  .frow { grid-template-columns:1fr; }
+  .book-form { padding:1.8rem 1.5rem; }
+
+  /* Cards */
+  .card-grid { grid-template-columns:1fr 1fr; }
+
+  /* Testimonial */
+  .t-slide blockquote { font-size:1.05rem; }
+
+  /* Floating */
+  .wa-btn { bottom:1.5rem; right:1.5rem; width:50px; height:50px; font-size:1.4rem; }
+  .back-top { bottom:1.5rem; left:1.5rem; width:40px; height:40px; font-size:1rem; }
+}
+
+@media(max-width:480px){
+  .card-grid { grid-template-columns:1fr; }
+  .gallery-masonry { grid-template-columns:1fr; }
+  .g-item.tall, .g-item.wide { grid-column:span 1; grid-row:span 1; }
+  .hero-cta { flex-direction:column; align-items:center; }
+  .hero-cta .btn-primary, .hero-cta .btn-outline { width:100%; max-width:280px; text-align:center; }
+  .stat-bar { grid-template-columns:1fr 1fr; }
+}
+
+/* Print styles */
+@media print {
+  nav, .wa-btn, .back-top, #loading-screen { display:none; }
+  .page { display:block !important; padding-top:0; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════ LOADING SCREEN ═══════════════════ -->
+<div id="loading-screen">
+  <div class="loader-name">ARUNACHALAM</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- ═══════════════════ FLOATING ELEMENTS ═══════════════════ -->
+<a href="https://wa.me/919755113747?text=Hello%2C%20I'd%20like%20to%20make%20a%20reservation%20at%20Arunachalam%20Caf%C3%A9"
+   class="wa-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="Reserve via WhatsApp">
+  💬
+</a>
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top" title="Back to top">↑</button>
+
+<!-- ═══════════════════ NAV ═══════════════════ -->
+<nav id="mainNav">
+  <div class="nav-brand" onclick="go('home')" style="cursor:pointer">
+    <div class="nav-emblem">
+      <img src="AC Logo.jpg" alt="Arunachalam Café Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <span class="nav-emblem-fallback" style="display:none">🏺</span>
+    </div>
+    <div class="nav-brand-text">
+      <h1>ARUNACHALAM</h1>
+      <span>Pure Veg Café · Raipur</span>
+    </div>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#" onclick="return go('home')" class="active" id="n-home">Home</a></li>
+    <li><a href="#" onclick="return go('about')" id="n-about">About</a></li>
+    <li><a href="#" onclick="return go('menu')" id="n-menu">Menu</a></li>
+    <li><a href="#" onclick="return go('gallery')" id="n-gallery">Gallery</a></li>
+    <li><a href="#" onclick="return go('contact')" id="n-contact">Contact</a></li>
+  </ul>
+  <button class="nav-burger" id="navBurger" onclick="toggleNav()" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════
+     HOME PAGE
+══════════════════════════════════════════════════════ -->
+<div class="page active" id="page-home">
+  <section class="hero kolam-bg">
+    <div class="hero-kolam"></div>
+    <p class="hero-eyebrow">Authentic South Indian Cuisine · Raipur, Chhattisgarh</p>
+    <h1 class="hero-name">ARUNA<span>CHALAM</span></h1>
+    <p class="hero-subtitle">Where Tradition Meets Every Plate</p>
+    <div class="hero-divider">✦ &nbsp; ❁ &nbsp; ✦</div>
+    <p class="hero-tagline">Good Food &nbsp;·&nbsp; Good Mood &nbsp;·&nbsp; Good Soul</p>
+    <div class="hero-badges">
+      <span class="pure-veg-badge">100% Pure Veg</span>
+    </div>
+    <div class="hero-cta">
+      <a href="#" class="btn-primary" onclick="return go('menu')">Explore Menu</a>
+      <a href="#" class="btn-outline" onclick="return go('contact')">Reserve a Table</a>
+    </div>
+  </section>
+
+  <div class="feature-strip">
+    <div class="feature-item">
+      <div class="fi">🥥</div>
+      <h3>Authentic Recipes</h3>
+      <p>Every dish prepared with traditional South Indian techniques, coconut chutneys & sambhar simmered fresh daily.</p>
+    </div>
+    <div class="feature-item">
+      <div class="fi">🌿</div>
+      <h3>100% Pure Veg</h3>
+      <p>A strictly vegetarian kitchen — honouring both taste and values, served with pride in every meal.</p>
+    </div>
+    <div class="feature-item">
+      <div class="fi">🏺</div>
+      <h3>Temple Town Warmth</h3>
+      <p>Inspired by sacred Arunachalam, our ambience blends classical art, kolam patterns, and heartfelt hospitality.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="section-header reveal">
+      <span class="section-tag">Must Try</span>
+      <h2 class="section-title">Our Signature Dishes</h2>
+      <div class="teal-rule"></div>
+      <p class="section-sub">From crispy Ghee Roast Dosas to soft Thatte Idlis — every item crafted with love and authenticity.</p>
+    </div>
+    <div class="card-grid">
+      <div class="card reveal">
+        <div class="ci">
+          <img src="Golden masala dosa with chutneys.png" alt="Arunachalam Special Dosa" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <span style="display:none;font-size:2.4rem">🫓</span>
+        </div>
+        <h3>Arunachalam Dosa</h3>
+        <p>Our house special — a crisp, golden dosa with a secret spiced filling. A must-try for every first-time visitor.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ci">
+          <img src="GHEE ROAST PODI MASA.png" alt="Ghee Roast Podi Masala Dosa" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <span style="display:none;font-size:2.4rem">✨</span>
+        </div>
+        <h3>Ghee Roast Podi Masala</h3>
+        <p>A dosa roasted in pure ghee, dusted with house podi, filled with spiced potato masala. Pure indulgence.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ci">
+          <img src="THATTE IDLI.png" alt="Thatte Idli" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <span style="display:none;font-size:2.4rem">🍚</span>
+        </div>
+        <h3>Thatte Idli</h3>
+        <p>Flat, pillowy, steamed to perfection. Served with coconut chutney and fresh sambhar — a Bangalore classic.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ci">
+          <img src="FC1.png" alt="South Indian Filter Coffee" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <span style="display:none;font-size:2.4rem">☕</span>
+        </div>
+        <h3>Filter Coffee</h3>
+        <p>Dark decoction poured fresh, frothed to just the right warmth in a traditional tumbler. South India in a sip.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Carousel -->
+  <div class="testimonial-wrap">
+    <div class="testimonial-inner">
+      <span class="section-tag" style="color:var(--gold-light);border-color:var(--terra)">Guest Voices</span>
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;color:#fff;margin:.5rem 0 2rem">What Our Guests Say</h2>
+      <div class="testimonial-slides" id="tSlides">
+        <div class="t-slide active">
+          <blockquote>"The Ghee Roast Podi Masala Dosa here is the best I have had outside of Karnataka. The sambhar is deeply flavoured, the chutney is fresh — and the whole place feels like a little piece of Chennai in Raipur."</blockquote>
+          <cite>Ramesh T. – Food Blogger, Raipur</cite>
+        </div>
+        <div class="t-slide">
+          <blockquote>"The Mini Meals combo is fantastic value — rice, dosa, idli, vada, and sweet for ₹220. We come here every week without fail. Best South Indian in Chhattisgarh!"</blockquote>
+          <cite>Priya & Anil M. – Regular Guests</cite>
+        </div>
+        <div class="t-slide">
+          <blockquote>"The interiors are stunning — classical murals, kolam art, the scent of filter coffee. Feels like a cultural experience alongside a beautiful meal."</blockquote>
+          <cite>Kavita R. – Raipur</cite>
+        </div>
+        <div class="t-slide">
+          <blockquote>"Freshest idlis in Raipur — soft, fluffy, served hot. The Pineapple Kesari dessert is a sweet bonus every time. Highly recommend to every South Indian food lover!"</blockquote>
+          <cite>Suresh K. – Raipur</cite>
+        </div>
+      </div>
+      <div class="t-dots" id="tDots">
+        <button class="t-dot active" onclick="goSlide(0)"></button>
+        <button class="t-dot" onclick="goSlide(1)"></button>
+        <button class="t-dot" onclick="goSlide(2)"></button>
+        <button class="t-dot" onclick="goSlide(3)"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <section class="section" style="text-align:center;padding:4rem 2rem">
+    <div class="reveal">
+      <span class="section-tag">Come Visit Us</span>
+      <h2 class="section-title">Ready for an Authentic Experience?</h2>
+      <div class="teal-rule" style="margin:1rem auto"></div>
+      <p class="section-sub" style="max-width:540px;margin:.6rem auto 2rem">
+        Walk in anytime between 7 AM and 9 PM. Or book your table in advance for a guaranteed seat. We look forward to welcoming you.
+      </p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <a href="#" class="btn-primary" onclick="return go('contact')" style="border-color:var(--terra)">Book a Table</a>
+        <a href="https://wa.me/919755113747" class="btn-outline" target="_blank" rel="noopener" style="color:var(--teal);border-color:var(--teal)">
+          💬 WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">ARUNACHALAM CAFÉ</div>
+    <div class="footer-sub">Pure Veg Restaurant · Raipur, Chhattisgarh</div>
+    <div class="footer-social">
+      <a href="tel:+919755113747" class="social-btn">📞 Call Us</a>
+      <a href="https://wa.me/919755113747" class="social-btn" target="_blank" rel="noopener">💬 WhatsApp</a>
+      <a href="mailto:arunachalamcafe@gmail.com" class="social-btn">✉️ Email</a>
+    </div>
+    <ul class="flinks">
+      <li><a href="#" onclick="return go('home')">Home</a></li>
+      <li><a href="#" onclick="return go('about')">About</a></li>
+      <li><a href="#" onclick="return go('menu')">Menu</a></li>
+      <li><a href="#" onclick="return go('gallery')">Gallery</a></li>
+      <li><a href="#" onclick="return go('contact')">Contact</a></li>
+    </ul>
+    <div class="fcopy">© 2025 Arunachalam Café · All Rights Reserved · 100% Pure Vegetarian</div>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════════════════════
+     ABOUT PAGE
+══════════════════════════════════════════════════════ -->
+<div class="page" id="page-about">
+  <div class="page-banner">
+    <div class="page-banner-kolam"></div>
+    <span class="banner-tag">Our Story</span>
+    <h1>About Arunachalam Café</h1>
+    <p>A journey from the sacred hills of Tamil Nadu to the heart of Raipur.</p>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-visual">
+      <div class="about-image-frame">
+        <img src="OIP.webp" alt="Arunachalam Café interior" class="about-photo"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="about-photo-fallback" style="display:none">
+          <span class="big">🏺</span>
+          <p>Arunachalam Café</p>
+        </div>
+      </div>
+    </div>
+    <div class="about-text">
+      <span class="section-tag">Est. in Raipur</span>
+      <h2>Rooted in Tradition, Served with Heart</h2>
+      <div class="teal-rule"></div>
+      <p>Arunachalam Café was born from a deep reverence for the ancient town of Tiruvannamalai — home of the sacred Arunachaleswarar Temple — and its rich culinary traditions that have nourished pilgrims and families for centuries.</p>
+      <p>Our founders brought with them family recipes, a belief in pure vegetarian cooking, and a vision to recreate the warmth of a South Indian tiffin house in the heart of Chhattisgarh. Every dosa, every idli, every filter coffee is a tribute to that heritage.</p>
+      <p>The walls of our café are adorned with classical murals, kolam patterns, and a hand-painted temple scene — reminders that food, at its best, is a form of devotion.</p>
+      <div style="margin-top:1.5rem;display:flex;gap:.8rem;flex-wrap:wrap;align-items:center">
+        <span class="pure-veg-badge">100% Pure Vegetarian Kitchen</span>
+        <span style="font-size:.75rem;color:var(--teal);font-style:italic">FSSAI Certified</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="stat-bar">
+    <div class="stat-cell"><div class="stat-num">100%</div><div class="stat-lbl">Pure Veg</div></div>
+    <div class="stat-cell"><div class="stat-num">60+</div><div class="stat-lbl">Menu Items</div></div>
+    <div class="stat-cell"><div class="stat-num">★4.5</div><div class="stat-lbl">Guest Rating</div></div>
+    <div class="stat-cell"><div class="stat-num">∞</div><div class="stat-lbl">Love for Food</div></div>
+  </div>
+
+  <section class="section">
+    <div class="section-header reveal">
+      <span class="section-tag">What We Stand For</span>
+      <h2 class="section-title">Our Values</h2>
+      <div class="teal-rule"></div>
+    </div>
+    <div class="card-grid">
+      <div class="card reveal">
+        <div class="ci">🌿</div>
+        <h3>Pure & Fresh</h3>
+        <p>Every ingredient is sourced fresh daily. No preservatives, no shortcuts — just honest, clean cooking the way it should be.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ci">🏺</div>
+        <h3>Cultural Heritage</h3>
+        <p>We honour the food traditions of Tamil Nadu — from Thatte Idli to Bisebelle Bath, cooked as they should be.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ci">🤝</div>
+        <h3>Warm Hospitality</h3>
+        <p>Every guest is family. Whether you're here for a quick tiffin or a full meal, you'll be treated with genuine warmth and care.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">ARUNACHALAM CAFÉ</div>
+    <div class="footer-sub">Pure Veg Restaurant · Raipur, Chhattisgarh</div>
+    <ul class="flinks">
+      <li><a href="#" onclick="return go('home')">Home</a></li>
+      <li><a href="#" onclick="return go('about')">About</a></li>
+      <li><a href="#" onclick="return go('menu')">Menu</a></li>
+      <li><a href="#" onclick="return go('gallery')">Gallery</a></li>
+      <li><a href="#" onclick="return go('contact')">Contact</a></li>
+    </ul>
+    <div class="fcopy">© 2025 Arunachalam Café · All Rights Reserved</div>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════════════════════
+     MENU PAGE
+══════════════════════════════════════════════════════ -->
+<div class="page" id="page-menu">
+  <div class="page-banner">
+    <div class="page-banner-kolam"></div>
+    <span class="banner-tag">Served Fresh Every Day</span>
+    <h1>Our Menu</h1>
+    <p>Authentic South Indian tiffin, rice, snacks, sweets & drinks — 100% vegetarian.</p>
+  </div>
+
+  <!-- Search bar -->
+  <div class="menu-search-bar">
+    <input type="search" id="menuSearch" placeholder="Search dishes… e.g. Masala Dosa" oninput="filterMenu(this.value)" autocomplete="off"/>
+  </div>
+
+  <div class="menu-tabs" id="menuTabs">
+    <button class="mtab active" onclick="mTab('idli',this)">🍚 Idli</button>
+    <button class="mtab" onclick="mTab('vada',this)">🟤 Vada</button>
+    <button class="mtab" onclick="mTab('dosa',this)">🫓 Dosa</button>
+    <button class="mtab" onclick="mTab('uttapam',this)">🥞 Uttapam</button>
+    <button class="mtab" onclick="mTab('rice',this)">🍛 Rice</button>
+    <button class="mtab" onclick="mTab('snacks',this)">🍟 Snacks</button>
+    <button class="mtab" onclick="mTab('sandwich',this)">🥪 Sandwich</button>
+    <button class="mtab" onclick="mTab('drinks',this)">☕ Drinks</button>
+    <button class="mtab" onclick="mTab('sweets',this)">🍨 Sweets</button>
+  </div>
+
+  <!-- IDLI -->
+  <div class="menu-pane active" id="mp-idli">
+    <h2 class="menu-cat-title">Idli</h2>
+    <div class="menu-row"><div class="menu-row-left"><h4>Idli Steam (2 pcs)</h4></div><div class="menu-price">₹70</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Idli Dip Sambhar</h4></div><div class="menu-price">₹80</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Ghee Podi Idli</h4></div><div class="menu-price">₹80</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Button Idli (8 pcs)</h4></div><div class="menu-price">₹80</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Button Idli Ghee Podi</h4></div><div class="menu-price">₹90</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Button Idli Dip Sambhar</h4></div><div class="menu-price">₹85</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Thatte Idli (1 pc) <span class="mbadge mbadge-gold">Popular</span></h4><p>Flat, pillowy Bangalore-style idli</p></div><div class="menu-price">₹70</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Thatte Idli Ghee Podi</h4></div><div class="menu-price">₹85</div></div>
+    <hr style="border:none;border-top:1px solid rgba(27,128,128,.15);margin:1rem 0"/>
+    <div class="menu-row"><div class="menu-row-left"><h4>Upma</h4></div><div class="menu-price">₹70</div></div>
+  </div>
+
+  <!-- VADA -->
+  <div class="menu-pane" id="mp-vada">
+    <h2 class="menu-cat-title">Vada</h2>
+    <div class="menu-row"><div class="menu-row-left"><h4>Vada (2 pcs)</h4></div><div class="menu-price">₹80</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Vada Dip Sambhar</h4></div><div class="menu-price">₹90</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Mini Vada (8 pcs)</h4></div><div class="menu-price">₹90</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Mini Vada Dip Sambhar</h4></div><div class="menu-price">₹100</div></div>
+    <hr style="border:none;border-top:1px solid rgba(27,128,128,.15);margin:1rem 0"/>
+    <h2 class="menu-cat-title" style="font-size:1.2rem;margin-bottom:1.2rem">Combo</h2>
+    <div class="menu-row"><div class="menu-row-left"><h4>Idli – Vada</h4></div><div class="menu-price">₹80</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Pineapple Kesari + Upma</h4></div><div class="menu-price">₹110</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Idli Vada Upma Combo <span class="mbadge">1 Idli, 1 Vada &amp; Upma</span></h4></div><div class="menu-price">₹120</div></div>
+    <hr style="border:none;border-top:1px solid rgba(27,128,128,.15);margin:1rem 0"/>
+    <h2 class="menu-cat-title" style="font-size:1.2rem;margin-bottom:1.2rem">Mini Meals</h2>
+    <div class="menu-row"><div class="menu-row-left"><h4>Mini Meals <span class="mbadge mbadge-gold">Best Value</span></h4><p>Combo Rice (Any 2), Mini Dosa, Idli/Vada, Sweet</p></div><div class="menu-price">₹220</div></div>
+    <hr style="border:none;border-top:1px solid rgba(27,128,128,.15);margin:1rem 0"/>
+    <h2 class="menu-cat-title" style="font-size:1.2rem;margin-bottom:1.2rem">Poori</h2>
+    <div class="menu-row"><div class="menu-row-left"><h4>Poori Sagu</h4></div><div class="menu-price">₹100</div></div>
+  </div>
+
+  <!-- DOSA -->
+  <div class="menu-pane" id="mp-dosa">
+    <h2 class="menu-cat-title">Dosa</h2>
+    <div class="menu-row"><div class="menu-row-left"><h4>Plain Dosa</h4></div><div class="menu-price">₹100</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Masala Dosa</h4></div><div class="menu-price">₹120</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Ghee Roast Plain Dosa</h4></div><div class="menu-price">₹120</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Ghee Roast Masala Dosa</h4></div><div class="menu-price">₹130</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Ghee Roast Podi Masala Dosa <span class="mbadge mbadge-gold">Signature</span></h4></div><div class="menu-price">₹140</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Mysore Masala Dosa</h4></div><div class="menu-price">₹140</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Arunachalam Dosa <span class="mbadge">House Special</span></h4></div><div class="menu-price">₹130</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Onion Masala Dosa</h4></div><div class="menu-price">₹130</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Paper Dosa</h4></div><div class="menu-price">₹130</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Paper Masala Dosa</h4></div><div class="menu-price">₹140</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Cutting Masala Dosa</h4></div><div class="menu-price">₹130</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Rava Plain Dosa</h4></div><div class="menu-price">₹130</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Rava Masala Dosa</h4></div><div class="menu-price">₹140</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Rava Onion Masala Dosa</h4></div><div class="menu-price">₹150</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Benne Dosa</h4></div><div class="menu-price">₹120</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Benne Masala Dosa</h4></div><div class="menu-price">₹130</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Set Dosa (2 pc)</h4></div><div class="menu-price">₹120</div></div>
+  </div>
+
+  <!-- UTTAPAM -->
+  <div class="menu-pane" id="mp-uttapam">
+    <h2 class="menu-cat-title">Uttapam</h2>
+    <div class="menu-row"><div class="menu-row-left"><h4>Onion Uttapam</h4></div><div class="menu-price">₹120</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Onion Tomato Uttapam</h4></div><div class="menu-price">₹130</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Ghee Podi Uttapam</h4></div><div class="menu-price">₹130</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Onion Cheese Uttapam</h4></div><div class="menu-price">₹150</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Ghee Podi Cheese Uttapam</h4></div><div class="menu-price">₹160</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Paneer Masala Uttapam</h4></div><div class="menu-price">₹160</div></div>
+  </div>
+
+  <!-- RICE -->
+  <div class="menu-pane" id="mp-rice">
+    <h2 class="menu-cat-title">Rice Items</h2>
+    <div class="menu-row"><div class="menu-row-left"><h4>Pulihora (Tamarind Rice)</h4></div><div class="menu-price">₹120</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Tomato Rice</h4></div><div class="menu-price">₹120</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Lemon Rice</h4></div><div class="menu-price">₹120</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Bisebelle Bath <span class="mbadge">Saturday Only</span></h4></div><div class="menu-price">₹110</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Curd Rice</h4></div><div class="menu-price">₹130</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Veg Biryani</h4></div><div class="menu-price">₹150</div></div>
+  </div>
+
+  <!-- SNACKS -->
+  <div class="menu-pane" id="mp-snacks">
+    <h2 class="menu-cat-title">Snacks</h2>
+    <div class="menu-row"><div class="menu-row-left"><h4>Bun Maska</h4></div><div class="menu-price">₹50</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Sabudana Vada</h4></div><div class="menu-price">₹80</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Veg Pakoda</h4></div><div class="menu-price">₹100</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Paneer Pakoda</h4></div><div class="menu-price">₹150</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>French Fries</h4></div><div class="menu-price">₹90</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Peri Peri Fries</h4></div><div class="menu-price">₹110</div></div>
+  </div>
+
+  <!-- SANDWICH -->
+  <div class="menu-pane" id="mp-sandwich">
+    <h2 class="menu-cat-title">Sandwich</h2>
+    <div class="menu-row"><div class="menu-row-left"><h4>Veg Grilled Sandwich</h4></div><div class="menu-price">₹80</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Bombay Masala Sandwich</h4></div><div class="menu-price">₹100</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Cheese Corn Sandwich</h4></div><div class="menu-price">₹110</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Peri Peri Cheese Corn Sandwich</h4></div><div class="menu-price">₹120</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Bombay Club Cheese Sandwich</h4></div><div class="menu-price">₹120</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Paneer Grilled Sandwich</h4></div><div class="menu-price">₹140</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Paneer Cheese Grilled Sandwich</h4></div><div class="menu-price">₹150</div></div>
+  </div>
+
+  <!-- DRINKS -->
+  <div class="menu-pane" id="mp-drinks">
+    <h2 class="menu-cat-title">Beverages</h2>
+    <div class="menu-row"><div class="menu-row-left"><h4>Tea</h4></div><div class="menu-price">₹30</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Filter Coffee <span class="mbadge mbadge-gold">Must Try</span></h4></div><div class="menu-price">₹40</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Lemon Tea</h4></div><div class="menu-price">₹50</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Honey Lemon Tea</h4></div><div class="menu-price">₹60</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Buttermilk</h4></div><div class="menu-price">₹70</div></div>
+    <hr style="border:none;border-top:1px solid rgba(27,128,128,.15);margin:1.5rem 0"/>
+    <h2 class="menu-cat-title" style="font-size:1.2rem;margin-bottom:1.2rem">Shakes</h2>
+    <div class="menu-row"><div class="menu-row-left"><h4>Banana Shake</h4></div><div class="menu-price">₹90</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Strawberry Shake</h4></div><div class="menu-price">₹110</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Pineapple Shake</h4></div><div class="menu-price">₹110</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Chocolate Shake</h4></div><div class="menu-price">₹130</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Oreo Shake</h4></div><div class="menu-price">₹130</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Cold Coffee</h4></div><div class="menu-price">₹120</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Cold Coffee with Ice Cream</h4></div><div class="menu-price">₹150</div></div>
+    <hr style="border:none;border-top:1px solid rgba(27,128,128,.15);margin:1.5rem 0"/>
+    <h2 class="menu-cat-title" style="font-size:1.2rem;margin-bottom:1.2rem">Mocktails</h2>
+    <div class="menu-row"><div class="menu-row-left"><h4>Lime Water</h4></div><div class="menu-price">₹50</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Lime Soda</h4></div><div class="menu-price">₹80</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Mint Lime</h4></div><div class="menu-price">₹80</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Kiwi Mojito</h4></div><div class="menu-price">₹100</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Blue Lagoon</h4></div><div class="menu-price">₹100</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Virgin Mojito</h4></div><div class="menu-price">₹100</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Fruit Punch</h4></div><div class="menu-price">₹120</div></div>
+  </div>
+
+  <!-- SWEETS -->
+  <div class="menu-pane" id="mp-sweets">
+    <h2 class="menu-cat-title">Dessert & Ice Cream</h2>
+    <div class="menu-row"><div class="menu-row-left"><h4>Pineapple Kesari <span class="mbadge mbadge-gold">House Dessert</span></h4><p>Traditional semolina sweet with pineapple and saffron</p></div><div class="menu-price">₹80</div></div>
+    <hr style="border:none;border-top:1px solid rgba(27,128,128,.15);margin:1.5rem 0"/>
+    <h2 class="menu-cat-title" style="font-size:1.2rem;margin-bottom:1.2rem">Ice Cream</h2>
+    <div class="menu-row"><div class="menu-row-left"><h4>Chocolate / Butter Scotch Ice Cream</h4></div><div class="menu-price">₹60</div></div>
+    <div class="menu-row"><div class="menu-row-left"><h4>Strawberry / Vanilla Ice Cream</h4></div><div class="menu-price">₹50</div></div>
+  </div>
+
+  <!-- Search results pane (hidden by default) -->
+  <div class="menu-pane" id="mp-search" style="display:none">
+    <h2 class="menu-cat-title">Search Results</h2>
+    <div id="search-results"></div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">ARUNACHALAM CAFÉ</div>
+    <div class="footer-sub">Pure Veg Restaurant · Raipur, Chhattisgarh</div>
+    <ul class="flinks">
+      <li><a href="#" onclick="return go('home')">Home</a></li>
+      <li><a href="#" onclick="return go('about')">About</a></li>
+      <li><a href="#" onclick="return go('menu')">Menu</a></li>
+      <li><a href="#" onclick="return go('gallery')">Gallery</a></li>
+      <li><a href="#" onclick="return go('contact')">Contact</a></li>
+    </ul>
+    <div class="fcopy">© 2025 Arunachalam Café · All Rights Reserved</div>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════════════════════
+     GALLERY PAGE
+══════════════════════════════════════════════════════ -->
+<div class="page" id="page-gallery">
+  <div class="page-banner">
+    <div class="page-banner-kolam"></div>
+    <span class="banner-tag">A Glimpse Inside</span>
+    <h1>Our Gallery</h1>
+    <p>Warm teak chairs, temple murals, kolam art & the golden hue of a dosa on the stone.</p>
+  </div>
+
+  <div class="gallery-wrap">
+    <div class="gallery-masonry">
+
+      <div class="g-item tall">
+        <div class="g-fill g2">
+          <img src="Arunanchalam cafe 2.jpg" alt="Arunachalam Café entrance"
+               onerror="this.style.display='none'" style="object-fit:cover">
+          <span class="gi" style="position:relative;z-index:1">🏛️</span>
+          <span>Café Entrance</span>
+        </div>
+        <div class="g-overlay"><p>Arunachalam Café — where every visit feels like coming home</p></div>
+      </div>
+
+      <div class="g-item wide">
+        <div class="g-fill g1">
+          <img src="AC 3.jpg" alt="Main Dining Hall" onerror="this.style.display='none'" style="object-fit:cover">
+          <span class="gi" style="position:relative;z-index:1">🍽️</span>
+          <span>Main Dining Hall</span>
+        </div>
+        <div class="g-overlay"><p>Our spacious dining hall, adorned with South Indian classical art</p></div>
+      </div>
+
+      <div class="g-item">
+        <div class="g-fill g3">
+          <img src="AC 2.jpg" alt="Classical Paintings" onerror="this.style.display='none'" style="object-fit:cover">
+          <span class="gi" style="position:relative;z-index:1">🎨</span>
+          <span>Classical Paintings</span>
+        </div>
+        <div class="g-overlay"><p>South Indian classical dance art adorning every wall</p></div>
+      </div>
+
+      <div class="g-item">
+        <div class="g-fill g5">
+          <img src="TC1.png" alt="Teal Lattice Frames" onerror="this.style.display='none'" style="object-fit:cover">
+          <span class="gi" style="position:relative;z-index:1">🔷</span>
+          <span>Teal Lattice Frames</span>
+        </div>
+        <div class="g-overlay"><p>Signature teal blue window frames with golden temple bells</p></div>
+      </div>
+
+      <div class="g-item wide">
+        <div class="g-fill g4">
+          <img src="SIGN DOSA.png" alt="The Signature Dosa" onerror="this.style.display='none'" style="object-fit:contain;padding:1rem">
+          <span class="gi" style="position:relative;z-index:1">🫓</span>
+          <span>The Signature Dosa</span>
+        </div>
+        <div class="g-overlay"><p>Arunachalam Dosa — crisped to golden perfection on a seasoned stone griddle</p></div>
+      </div>
+
+      <div class="g-item">
+        <div class="g-fill g6">
+          <img src="FC1.png" alt="Filter Coffee" onerror="this.style.display='none'" style="object-fit:contain;padding:.8rem">
+          <span class="gi" style="position:relative;z-index:1">☕</span>
+          <span>Filter Coffee</span>
+        </div>
+        <div class="g-overlay"><p>Dark decoction, frothed in a tumbler — South India in a sip</p></div>
+      </div>
+
+      <div class="g-item">
+        <div class="g-fill g7">
+          <img src="AC ENT.png" alt="Main Entrance" onerror="this.style.display='none'" style="object-fit:cover">
+          <span class="gi" style="position:relative;z-index:1">🌸</span>
+          <span>Main Entrance</span>
+        </div>
+        <div class="g-overlay"><p>Traditional kolam patterns welcoming you at the entrance</p></div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">ARUNACHALAM CAFÉ</div>
+    <div class="footer-sub">Pure Veg Restaurant · Raipur, Chhattisgarh</div>
+    <ul class="flinks">
+      <li><a href="#" onclick="return go('home')">Home</a></li>
+      <li><a href="#" onclick="return go('about')">About</a></li>
+      <li><a href="#" onclick="return go('menu')">Menu</a></li>
+      <li><a href="#" onclick="return go('gallery')">Gallery</a></li>
+      <li><a href="#" onclick="return go('contact')">Contact</a></li>
+    </ul>
+    <div class="fcopy">© 2025 Arunachalam Café · All Rights Reserved</div>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════════════════════
+     CONTACT PAGE
+══════════════════════════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <div class="page-banner">
+    <div class="page-banner-kolam"></div>
+    <span class="banner-tag">We'd Love to See You</span>
+    <h1>Contact & Reservations</h1>
+    <p>Walk in anytime, or book your table in advance. We're always ready to serve.</p>
+  </div>
+
+  <div class="contact-wrap">
+    <!-- LEFT: Info Panel -->
+    <div class="contact-panel">
+      <h2>Find Us</h2>
+      <div class="teal-rule"></div>
+
+      <div class="cdetail">
+        <span class="ci">📍</span>
+        <div>
+          <h4>Address</h4>
+          <p>Arunachalam Café<br>Raipur, Chhattisgarh<br>India</p>
+        </div>
+      </div>
+      <div class="cdetail">
+        <span class="ci">📞</span>
+        <div>
+          <h4>Phone</h4>
+          <p><a href="tel:+919755113747">+91 97551 13747</a></p>
+        </div>
+      </div>
+      <div class="cdetail">
+        <span class="ci">💬</span>
+        <div>
+          <h4>WhatsApp</h4>
+          <p><a href="https://wa.me/919755113747" target="_blank" rel="noopener">Chat with us on WhatsApp</a></p>
+        </div>
+      </div>
+      <div class="cdetail">
+        <span class="ci">✉️</span>
+        <div>
+          <h4>Email</h4>
+          <p><a href="mailto:arunachalamcafe@gmail.com">arunachalamcafe@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="cdetail" style="border-bottom:none;display:block;padding-top:1.5rem">
+        <h4 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--teal-dark);margin-bottom:.8rem">Opening Hours</h4>
+        <table class="hours-tbl" id="hoursTable">
+          <tr><td>Monday – Friday</td><td>7:00 AM – 9:00 PM</td></tr>
+          <tr><td>Saturday</td><td>7:00 AM – 9:30 PM</td></tr>
+          <tr><td>Sunday</td><td>7:30 AM – 8:00 PM</td></tr>
+        </table>
+        <p style="margin-top:1rem;font-size:.82rem;color:var(--teal);font-style:italic">★ Bisebelle Bath available every Saturday only</p>
+      </div>
+
+      <!-- Google Maps Embed -->
+      <div class="map-embed" style="margin-top:1.5rem">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117849.84!2d81.5785!3d21.2514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dda5e0000001%3A0x1!2sRaipur%2C+Chhattisgarh!5e0!3m2!1sen!2sin!4v1"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Arunachalam Café location in Raipur">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- RIGHT: Booking Form -->
+    <div class="book-form">
+      <h2>Reserve a Table</h2>
+      <div id="fc">
+        <div class="frow">
+          <div class="fgroup" id="fg-fname">
+            <label>First Name</label>
+            <input type="text" id="fname" placeholder="Ramesh" autocomplete="given-name"/>
+            <span class="err-msg">Please enter your first name</span>
+          </div>
+          <div class="fgroup" id="fg-lname">
+            <label>Last Name</label>
+            <input type="text" id="lname" placeholder="Kumar" autocomplete="family-name"/>
+            <span class="err-msg">Please enter your last name</span>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="fgroup" id="fg-email">
+            <label>Email</label>
+            <input type="email" id="femail" placeholder="you@email.com" autocomplete="email"/>
+            <span class="err-msg">Please enter a valid email address</span>
+          </div>
+          <div class="fgroup" id="fg-phone">
+            <label>Phone</label>
+            <input type="tel" id="fphone" placeholder="+91 98765 43210" autocomplete="tel"/>
+            <span class="err-msg">Please enter your phone number</span>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="fgroup" id="fg-date">
+            <label>Date</label>
+            <input type="date" id="fdate"/>
+            <span class="err-msg">Please select a date</span>
+          </div>
+          <div class="fgroup" id="fg-time">
+            <label>Time</label>
+            <select id="ftime">
+              <option value="">Select time</option>
+              <option>7:00 AM</option><option>8:00 AM</option><option>9:00 AM</option>
+              <option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option>
+              <option>1:00 PM</option><option>2:00 PM</option><option>5:00 PM</option>
+              <option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option>
+            </select>
+            <span class="err-msg">Please select a time</span>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="fgroup">
+            <label>Guests</label>
+            <select>
+              <option>1</option><option>2</option><option selected>3</option>
+              <option>4</option><option>5</option><option>6+</option>
+            </select>
+          </div>
+          <div class="fgroup">
+            <label>Purpose</label>
+            <select>
+              <option>Table Reservation</option>
+              <option>General Enquiry</option>
+              <option>Group / Family</option>
+              <option>Catering / Bulk Order</option>
+            </select>
+          </div>
+        </div>
+        <div class="fgroup">
+          <label>Message / Special Request</label>
+          <textarea rows="3" placeholder="Any dietary notes, special occasions, or questions…"></textarea>
+        </div>
+        <button class="btn-primary" style="width:100%;border:none;font-size:.88rem;padding:1rem"
+                onclick="submitForm()">
+          Confirm Reservation ✦
+        </button>
+        <p style="font-size:.75rem;color:var(--text-soft);text-align:center;margin-top:.8rem">
+          We will confirm your booking via phone or WhatsApp within a few hours.
+        </p>
+      </div>
+      <div class="form-success" id="fs">
+        <div class="fs-icon">🙏</div>
+        <h3>Namaste! Reservation Received.</h3>
+        <p>Thank you for choosing Arunachalam Café. We will confirm your table within a few hours. We look forward to welcoming you with warm food and warmer hospitality.</p>
+        <a href="https://wa.me/919755113747" target="_blank" rel="noopener"
+           style="display:inline-block;margin-top:1.5rem;padding:.7rem 1.5rem;background:var(--gold);color:#fff;text-decoration:none;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700">
+          💬 Confirm via WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">ARUNACHALAM CAFÉ</div>
+    <div class="footer-sub">Pure Veg Restaurant · Raipur, Chhattisgarh</div>
+    <ul class="flinks">
+      <li><a href="#" onclick="return go('home')">Home</a></li>
+      <li><a href="#" onclick="return go('about')">About</a></li>
+      <li><a href="#" onclick="return go('menu')">Menu</a></li>
+      <li><a href="#" onclick="return go('gallery')">Gallery</a></li>
+      <li><a href="#" onclick="return go('contact')">Contact</a></li>
+    </ul>
+    <div class="fcopy">© 2025 Arunachalam Café · All Rights Reserved</div>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════════════════════ -->
+<script>
+/* ═══ Loading Screen ═══ */
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('loading-screen').classList.add('hidden');
+    initReveal();
+  }, 1200);
+});
+
+/* ═══ Navigation ═══ */
+function go(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  const page = document.getElementById('page-' + name);
+  if (page) page.classList.add('active');
+  const link = document.getElementById('n-' + name);
+  if (link) link.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.getElementById('navLinks').classList.remove('open');
+  document.getElementById('navBurger').classList.remove('open');
+  // Re-init reveal for new page
+  setTimeout(initReveal, 100);
+  return false;
+}
+
+function toggleNav() {
+  document.getElementById('navLinks').classList.toggle('open');
+  document.getElementById('navBurger').classList.toggle('open');
+}
+
+/* ═══ Nav scroll shadow ═══ */
+window.addEventListener('scroll', () => {
+  document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 20);
+  document.getElementById('backTop').classList.toggle('visible', window.scrollY > 300);
+});
+
+/* ═══ Menu Tabs ═══ */
+function mTab(id, btn) {
+  // Clear search when switching tabs
+  const searchEl = document.getElementById('menuSearch');
+  if (searchEl) searchEl.value = '';
+  document.getElementById('mp-search').style.display = 'none';
+
+  document.querySelectorAll('.menu-pane').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.mtab').forEach(b => b.classList.remove('active'));
+  const pane = document.getElementById('mp-' + id);
+  if (pane) { pane.classList.add('active'); pane.style.display = ''; }
+  btn.classList.add('active');
+}
+
+/* ═══ Menu Search ═══ */
+function filterMenu(q) {
+  const query = q.trim().toLowerCase();
+  const tabs = document.getElementById('menuTabs');
+  const searchPane = document.getElementById('mp-search');
+  const resultsEl = document.getElementById('search-results');
+
+  if (!query) {
+    // Restore default tab
+    searchPane.style.display = 'none';
+    document.querySelectorAll('.menu-pane').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.mtab').forEach(b => b.classList.remove('active'));
+    document.getElementById('mp-idli').classList.add('active');
+    document.querySelector('.mtab').classList.add('active');
+    return;
+  }
+
+  // Collect all rows from all panes (except search & active)
+  const allRows = document.querySelectorAll('.menu-pane:not(#mp-search) .menu-row');
+  let html = '';
+  let count = 0;
+  allRows.forEach(row => {
+    const text = row.textContent.toLowerCase();
+    if (text.includes(query)) {
+      html += row.outerHTML;
+      count++;
+    }
+  });
+
+  document.querySelectorAll('.menu-pane').forEach(p => { p.classList.remove('active'); p.style.display = ''; });
+  document.querySelectorAll('.mtab').forEach(b => b.classList.remove('active'));
+
+  resultsEl.innerHTML = count
+    ? html
+    : '<p class="menu-no-results">No dishes found for "<em>' + q + '</em>"</p>';
+  searchPane.style.display = 'block';
+  searchPane.classList.add('active');
+}
+
+/* ═══ Today's Opening Hours Highlight ═══ */
+(function highlightToday() {
+  const day = new Date().getDay(); // 0=Sun, 6=Sat
+  const rows = document.querySelectorAll('#hoursTable tr');
+  if (!rows.length) return;
+  let idx = 0; // Mon-Fri
+  if (day === 6) idx = 1; // Saturday
+  if (day === 0) idx = 2; // Sunday
+  if (rows[idx]) {
+    rows[idx].classList.add('today');
+    // Add "Today" badge
+    const td = rows[idx].querySelector('td');
+    if (td) {
+      const badge = document.createElement('span');
+      badge.className = 'today-badge';
+      badge.textContent = 'Today';
+      td.appendChild(badge);
+    }
+  }
+})();
+
+/* ═══ Set minimum date for booking ═══ */
+(function setMinDate() {
+  const dateEl = document.getElementById('fdate');
+  if (dateEl) {
+    const today = new Date().toISOString().split('T')[0];
+    dateEl.setAttribute('min', today);
+  }
+})();
+
+/* ═══ Form Validation & Submit ═══ */
+function submitForm() {
+  let valid = true;
+
+  function validate(fieldId, groupId, check) {
+    const el = document.getElementById(fieldId);
+    const grp = document.getElementById(groupId);
+    if (!el || !grp) return;
+    const ok = check(el.value.trim());
+    grp.classList.toggle('error', !ok);
+    if (!ok) valid = false;
+  }
+
+  validate('fname', 'fg-fname', v => v.length >= 2);
+  validate('lname', 'fg-lname', v => v.length >= 2);
+  validate('femail', 'fg-email', v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v));
+  validate('fphone', 'fg-phone', v => v.replace(/\D/g,'').length >= 7);
+  validate('fdate', 'fg-date', v => v !== '');
+  validate('ftime', 'fg-time', v => v !== '');
+
+  if (!valid) return;
+
+  const btn = document.querySelector('#fc .btn-primary');
+  btn.textContent = 'Sending…';
+  btn.disabled = true;
+
+  setTimeout(() => {
+    document.getElementById('fc').style.display = 'none';
+    document.getElementById('fs').classList.add('show');
+  }, 800);
+}
+
+/* ═══ Testimonial Carousel ═══ */
+let currentSlide = 0;
+const slides = document.querySelectorAll('.t-slide');
+const dots = document.querySelectorAll('.t-dot');
+let slideTimer;
+
+function goSlide(n) {
+  slides[currentSlide].classList.remove('active');
+  dots[currentSlide].classList.remove('active');
+  currentSlide = (n + slides.length) % slides.length;
+  slides[currentSlide].classList.add('active');
+  dots[currentSlide].classList.add('active');
+  resetSlideTimer();
+}
+
+function resetSlideTimer() {
+  clearInterval(slideTimer);
+  slideTimer = setInterval(() => goSlide(currentSlide + 1), 5000);
+}
+
+resetSlideTimer();
+
+/* ═══ Scroll Reveal ═══ */
+function initReveal() {
+  const els = document.querySelectorAll('.page.active .reveal');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  els.forEach(el => obs.observe(el));
+}
+</script>
+</body>
+</html>
